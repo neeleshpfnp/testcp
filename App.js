@@ -89,7 +89,6 @@ const App: () => Node = () => {
   };
 
   const syncStatusChangeCallback = (status) => {
-    console.log("syncStatusChangeCallback", status)
     switch (status) {
       case codePush.SyncStatus.CHECKING_FOR_UPDATE:
         setMessage("Checking for updates...");
