@@ -19,6 +19,8 @@ target 'testcp' do
     :app_path => "#{Pod::Config.instance.installation_root}/.."
   )
 
+  pod 'CodePush', :path => '../node_modules/react-native-code-push'
+
   target 'testcpTests' do
     inherit! :complete
     # Pods for testing
